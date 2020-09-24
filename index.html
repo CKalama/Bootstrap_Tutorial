@@ -12,24 +12,93 @@
 
 <body>
     <!-- Breaking Down the Grid with Rows and Columns -->
-    <div class="container-fluid my-conatiner">
-     <div class="row my-row">
-         <div class="col-4 my-col">
+<div class="container my-container">
+     <div class="row my-row align-items-center">
+         <div class="col-md-4 my-col">
              Row 1 Col 1
          </div>
-         <div class="col-8 my-col">
+         <div class="col-md-8 my-col">
              Row 1 Col 2
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
          </div>
      </div>
-     <div class="row my-row">
-         <div class="col my-col">
-             Row 2 Col 1
+     <div class="row justify-content-around align-items-center my-row">
+         <div class="col-4 my-col">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
          </div>
+         <div class="col-4 my-col">
+             Row 2 Col 2
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+        </div>
      </div>
+</div>
 
+<!-- Showing how to Justify Content in Row Class -->
+<!-- Change justify-content-center/start/end/around/between -->
+<!-- Change the align-items from center/between/start/stretch. -->
+<!-- Toggle the p tags to see how the content would look with text and mix and match the justify content and align item class. -->
+<!-- Look at how the rows shift and change based on how you mix and match the justify-content and align-item. You can truly move around your items in css and Bootstrap. Making your page much more flexible and customizable. -->
 
+<div class="container my-container">
+    <div class="row my-row align-items-start">
+        <div class="col-md-4 my-col">
+            Row 1 Col 1
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-8 my-col">
+            Row 1 Col 2
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <div class="row justify-content-between align-items-stretch my-row">
+        <div class="col-4 my-col">
+            Row 2 Col 1
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-4 my-col">
+           Row 2 Col 2
+       </div>
     </div>
 
+
+    <!-- This is highlighting the order-12 function. You can order your columns 1-12 based on how you write it. Super useful if you want a picture on one side of a row compared to where the text is. You can align them in any way you want. -->
+
+    <!-- Also, Look at the offset-3, this allows you to fine tune your columns. This will "push" this column to any available rows to its right. Think of the 12 grid the row runs on. If you have a column to the left and you offset-2. You will push it two "rows" in the column to the right. -->
+
+    <!-- Be aware, when you work on smaller screens, you need to have the corresponding size (md,lg,xl,xs,sm) with the order-md-12 class tag. If not, as you start to shrink your screen, once it hits a certain pixel size it will REVERT back to original column order you wrote the code in. So. On mobile deviles be wary of this. However, you could customize a mobile version so that when it compresses things move to the top and make it functional still... -->
+    <div class="container my-container">
+        <div class="row my-row justify-content-between">
+            <div class="col-md-4 my-col order-12">
+                Row 3 Col 1
+            </div>
+            <div class="col-md-4 offset-3 align-self-start order-2 my-col">
+                Row 3 Col 2
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+            </div>
+        </div>
+ 
+ 
+ 
+ 
+ 
+    <!-- Breaking Down the Grid with Rows and Columns --- This one has Container Fluid to show the Difference on the HTML Screen
+ <div class="container-fluid my-container">
+    <div class="row my-row">
+        <div class="col-4 my-col">
+            Row 1 Col 1
+        </div>
+        <div class="col-8 my-col">
+            Row 1 Col 2
+        </div>
+    </div>
+    <div class="row my-row">
+        <div class="col my-col">
+            Row 2 Col 1
+        </div>
+    </div>
+
+
+   </div> -->
     
   
 </body>

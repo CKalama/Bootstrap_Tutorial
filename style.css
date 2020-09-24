@@ -6,12 +6,13 @@ body {
     margin:30px;
 }
 
-.my.container {
-    border: 2px solid green;
+.my-container {
+    border: 5px solid green;
 }
 
 .my-row {
     border: 4px dotted red;
+    height:300px;
 }
 
 .my-col {
